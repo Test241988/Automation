@@ -1,0 +1,5 @@
+{
+    "baseUrl": "https://demo.opencart.com/",
+    "uploadUrl":"https://the-internet.herokuapp.com/upload"
+
+}

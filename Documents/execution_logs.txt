@@ -1,0 +1,223 @@
+> toptal-project@1.0.0 pretest C:\Users\ancha\Documents\GitHub\Toptal\Ankur-Chadha-2\Web Automation
+> node ./config/pretest.js
+
+
+> toptal-project@1.0.0 test C:\Users\ancha\Documents\GitHub\Toptal\Ankur-Chadha-2\Web Automation
+> npm-run-all -s -c pretest maintest report
+
+
+> toptal-project@1.0.0 pretest C:\Users\ancha\Documents\GitHub\Toptal\Ankur-Chadha-2\Web Automation
+> node ./config/pretest.js
+
+
+> toptal-project@1.0.0 maintest C:\Users\ancha\Documents\GitHub\Toptal\Ankur-Chadha-2\Web Automation
+> cucumber-js --format json:report/cucumber_report.json
+
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+..... √ fixture - test
+
+
+ 1 passed (4s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+....
+
+Product count: 1
+Following products are found after the search:
+iPhone
+... √ fixture - test
+
+
+ 1 passed (9s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+....
+
+Product count: 3
+Following products are found after the search:
+MacBook
+MacBook Air
+MacBook Pro
+... √ fixture - test
+
+
+ 1 passed (9s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+...... √ fixture - test
+
+
+ 1 passed (3s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+....
+
+Product count: 15
+Following products are found after the search:
+Apple Cinema 30"
+Canon EOS 5D
+HP LP3065
+HTC Touch HD
+iMac
+iPhone
+iPod Classic
+iPod Nano
+iPod Shuffle
+iPod Touch
+MacBook
+MacBook Air
+MacBook Pro
+Nikon D300
+Palm Treo Pro
+
+
+Product count: 4
+Following products are found after the search:
+Product 8
+Samsung SyncMaster 941BW
+Sony VAIO
+Samsung Galaxy Tab 10.1
+... √ fixture - test
+
+
+ 1 passed (13s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+.......... √ fixture - test
+
+
+ 1 passed (15s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+....
+
+Product count: 2
+Following products are found after the search:
+Samsung SyncMaster 941BW
+Samsung Galaxy Tab 10.1
+... √ fixture - test
+
+
+ 1 passed (10s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+....
+
+Product count: 2
+Following products are found after the search:
+Samsung SyncMaster 941BW
+Samsung Galaxy Tab 10.1
+...
+
+Product count: 2
+Following products are found after the search:
+Samsung SyncMaster 941BW
+Samsung Galaxy Tab 10.1
+...(node:27296) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 uncaughtException listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+(Use `node --trace-warnings ...` to show where the warning was created)
+ √ fixture - test
+
+
+ 1 passed (15s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+..
+File "test_upload.jpg" selected!!
+..
+File "test_upload.jpg" uploaded successfully!!
+... √ fixture - test
+
+
+ 1 passed (5s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+..
+File "text-file.txt" selected!!
+..
+File "text-file.txt" uploaded successfully!!
+...(node:27296) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 unhandledRejection listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+ √ fixture - test
+
+
+ 1 passed (4s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+..
+File "doc-file.docx" selected!!
+..
+File "doc-file.docx" uploaded successfully!!
+... √ fixture - test
+
+
+ 1 passed (3s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+..
+File "excel-file.xlsx" selected!!
+..
+File "excel-file.xlsx" uploaded successfully!!
+... √ fixture - test
+
+
+ 1 passed (4s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+...
+Error while uploading!!
+... √ fixture - test
+
+
+ 1 passed (4s)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ Running tests in:
+ - Chrome 98.0.4758.102 / Windows 10
+
+..
+File "test_upload.jpg" selected!!
+.File selection is cleared!!
+..
+Error while uploading!!
+...
+
+14 scenarios (14 passed)
+59 steps (59 passed)
+2m50.688s (executing steps: 2m50.605s)
+ √ fixture - test
+
+
+ 1 passed (4s)
+
+> toptal-project@1.0.0 report C:\Users\ancha\Documents\GitHub\Toptal\Ankur-Chadha-2\Web Automation
+> node ./report-generator.js

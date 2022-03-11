@@ -1,0 +1,3471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cucumber Feature Report</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" >
+    <style type="text/css">
+      .panel-heading {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .pull-right-lg {
+        float: left;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+@media (min-width: 1200px) {
+    .pull-right-lg {
+        float: right;
+    }
+}
+
+.left {
+    float: left;
+}
+
+.metadata {
+    overflow: auto;
+    letter-spacing: 0.2px;
+    border-color: white;
+    line-height: 1.6;
+    color: #4d4d4d;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    padding-bottom: 3px;
+}
+
+.panel-heading a {
+    padding: 10px 15px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+.panel-heading i.glyphicon-chevron-down {
+    display: none;
+}
+
+.panel-heading i.glyphicon-chevron-right {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-down {
+    display: inline-block;
+}
+
+.panel-heading.open i.glyphicon-chevron-right {
+    display: none;
+}
+
+.generated-on {
+    text-align: right;
+    padding-bottom: 10px;
+}
+
+.panel-title b {
+    padding-right: 10px;
+}
+
+.panel-heading .label-container {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.panel-heading .label-container label {
+    margin-left: 5px;
+    padding: 5px;
+}
+
+.navbar .label-container {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+
+.navbar {
+    margin-bottom: 10px;
+}
+
+.navbar .label {
+    font-size: 20px;
+}
+
+.navbar .project-name {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tags {
+    margin-left: 18px;
+    margin-right: 20px;
+    padding-top: 5px;
+    margin-bottom: -4px;
+}
+
+.tag {
+    font-size: 13px;
+    color: #696969;
+    letter-spacing: 0.3px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.chart {
+    padding-bottom: 15px;
+}
+
+div.chart div div svg rect {
+    fill: #f5f5f5;
+}
+
+.arguments {
+    margin-left: 30px;
+    margin-top: 1em;
+    margin-bottom: 15px;
+}
+
+#directory {
+    background-color: #f0f0f0;
+}
+
+.screenshot {
+    padding: 2% 0 2% 0;
+}
+
+.description {
+    background-color: white;
+    border-color: white;
+    line-height: 1.6;
+    color: #6f6f6f;
+    font-weight: 400;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    padding: 0.1em 0.5em 1.2em 1.5em
+}
+
+#scenario-description {
+    padding-bottom: 1em;
+    padding-left: 0.2em;
+}
+
+.scrollBar {
+    overflow-x: scroll;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+.info {
+    background-color: #fbfbfb;
+}
+
+pre {
+    display: block;
+    padding: 10px;
+    margin-top: 1em;
+    margin-right: 3em;
+    font-size: 13px;
+    line-height: 1.42857143;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.step-duration {
+    float: right;
+    color: #BDBDBD;
+}
+
+.footer-div {
+    text-align: right;
+    vertical-align: middle;
+    height: 3.5%;
+    width: 100%;
+}
+
+.footer-container {
+    margin-right: 10px;
+    margin-top: 5px;
+    width: 18%;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+.show-modal:hover {
+    background-color: #f0f0f0;
+}
+
+.footer-link {
+    font-size: 13px;
+    float: right;
+}
+
+.footer-link:hover {
+    color: darkgray;
+}
+
+.steps {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: -4px;
+}
+
+.all-features {
+    padding-top: 0.6em;
+}
+
+.keyword {
+    color: #616161;
+}
+
+.feature-passed {
+    display: block;
+}
+
+.feature-failed{
+    display: block;
+}
+
+    </style>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+        
+          <a class="navbar-brand">Cucumberjs Report</a>
+          <div class="project-name visible-md visible-lg">toptal-project</div>
+          <div class="label-container">
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 14</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="generated-on">Tue Mar 08 2022 18:53:02 GMT-0800 (Pacific Standard Time)</div>
+
+      <div class="row">
+        <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
+        <div class="chart col-lg-6 col-md-6" id="piechart_scenarios"></div>
+      </div>
+
+      
+
+      
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturetoptal_project1a20b33a-4a1c-4382-8c56-ba1de48148ae">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Search
+                        <span class="label-container">
+              <span class="label label-success"
+                                                         title="8 Scenarios Passed">8</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturetoptal_project1a20b33a-4a1c-4382-8c56-ba1de48148ae" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">    This is a feature file containing scenarios for testing search functionality.</div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_projectff2fb367-3c7d-4eb2-b297-210400f2a629">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Verify the presence of search options on the page (UI verification)
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="2 Steps Passed">2</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_projectff2fb367-3c7d-4eb2-b297-210400f2a629"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               3s 39ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Search box and Search button should be present</span>
+                            
+                          
+                              <span class="step-duration">
+                               109ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_projectc8318340-976d-47cf-83e0-ed1fa6d07121">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Search for "iPhone" on the website (exact search)
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_projectc8318340-976d-47cf-83e0-ed1fa6d07121"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               963ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User enters &quot;iPhone&quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 197ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Search button</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 293ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> User should be able to search successfully and Search results should contain &quot;iPhone&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               421ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project410f21ad-979f-4663-a0af-097b3c54a8ed">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Search for "Macbook" on the website and verify if the multiple results matching the string is displayed
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project410f21ad-979f-4663-a0af-097b3c54a8ed"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 26ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User enters &quot;Macbook&quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 279ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Search button</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 357ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> User should be able to search successfully and Search results should contain &quot;Macbook&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               696ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project2728a2a1-155a-4855-9238-f985d6b971bb">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Click on Search without entering any search text
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project2728a2a1-155a-4855-9238-f985d6b971bb"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               871ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Search button</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 392ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> No products should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               88ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_projectcd2ed63c-9c43-4b0d-8bb4-08a851ca7278">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Search for empty space and verify the search results on multiple pages
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_projectcd2ed63c-9c43-4b0d-8bb4-08a851ca7278"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               917ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User enters &quot; &quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 632ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Search button</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 708ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> User should be able to search successfully and Search results should contain &quot; &quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 453ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project0cfa727b-9a09-4033-8f5c-9143d30ff16c">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Search for incorrect text that doesn't produce any search results
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="7 Steps Passed">7</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project0cfa727b-9a09-4033-8f5c-9143d30ff16c"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               910ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User enters &quot;abcd&quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               4s 954ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Search button</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 291ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> No products should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               92ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> User enters &quot;#@!!!&quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 36ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Search button</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 289ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> No products should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               92ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_projectb3352181-7094-460e-8e90-30463befdd8b">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Verify search by pressing enter key
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_projectb3352181-7094-460e-8e90-30463befdd8b"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 959ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User enters &quot;samsung&quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 281ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Press Enter Key</span>
+                            
+                          
+                              <span class="step-duration">
+                               772ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> User should be able to search successfully and Search results should contain &quot;samsung&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               366ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project65c1110f-616a-42f9-a29c-03babb9b5b6a">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Verify the results when user performs case-insensitive search
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="7 Steps Passed">7</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project65c1110f-616a-42f9-a29c-03babb9b5b6a"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the website</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 138ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User enters &quot;SAMsung&quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 266ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Press Enter Key</span>
+                            
+                          
+                              <span class="step-duration">
+                               737ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> User should be able to search successfully and Search results should contain &quot;SAMsung&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               374ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> User enters &quot;SAMSUNG&quot; in the search box</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 246ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Press Enter Key</span>
+                            
+                          
+                              <span class="step-duration">
+                               738ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> User should be able to search successfully and Search results should contain &quot;SAMSUNG&quot;</span>
+                            
+                          
+                              <span class="step-duration">
+                               362ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeaturetoptal_projectd51b4233-6dae-4458-9431-4e75c79b9b26">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Upload a file
+                        <span class="label-container">
+              <span class="label label-success"
+                                                         title="6 Scenarios Passed">6</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeaturetoptal_projectd51b4233-6dae-4458-9431-4e75c79b9b26" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    <div class="description">    This is a feature file containing scenarios for uploading a file.</div>
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project8fc847d8-a2b2-415e-9169-d752bb3f474c">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Verify uploading of an image
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project8fc847d8-a2b2-415e-9169-d752bb3f474c"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the upload website</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 303ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User selects a file &quot;test_upload.jpg&quot; and click open</span>
+                            
+                          
+                              <span class="step-duration">
+                               101ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Upload button</span>
+                            
+                          
+                              <span class="step-duration">
+                               961ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Verify whether file &quot;test_upload.jpg&quot; is uploaded successfully</span>
+                            
+                          
+                              <span class="step-duration">
+                               149ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project3528cc33-9731-4d80-b7e3-d2161416f328">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Verify uploading of a text file
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project3528cc33-9731-4d80-b7e3-d2161416f328"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the upload website</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 373ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User selects a file &quot;text-file.txt&quot; and click open</span>
+                            
+                          
+                              <span class="step-duration">
+                               106ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Upload button</span>
+                            
+                          
+                              <span class="step-duration">
+                               928ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Verify whether file &quot;text-file.txt&quot; is uploaded successfully</span>
+                            
+                          
+                              <span class="step-duration">
+                               152ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_projectee728afb-e8c5-46a3-93f6-11ea82c12991">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Verify uploading of word document
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_projectee728afb-e8c5-46a3-93f6-11ea82c12991"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the upload website</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 214ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User selects a file &quot;doc-file.docx&quot; and click open</span>
+                            
+                          
+                              <span class="step-duration">
+                               89ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Upload button</span>
+                            
+                          
+                              <span class="step-duration">
+                               913ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Verify whether file &quot;doc-file.docx&quot; is uploaded successfully</span>
+                            
+                          
+                              <span class="step-duration">
+                               137ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project81a82351-8779-4756-a883-1a8bcfe94f26">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Verify uploading of an excel sheet
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project81a82351-8779-4756-a883-1a8bcfe94f26"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the upload website</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 336ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User selects a file &quot;excel-file.xlsx&quot; and click open</span>
+                            
+                          
+                              <span class="step-duration">
+                               94ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Upload button</span>
+                            
+                          
+                              <span class="step-duration">
+                               937ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Verify whether file &quot;excel-file.xlsx&quot; is uploaded successfully</span>
+                            
+                          
+                              <span class="step-duration">
+                               149ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_project46ad0e0d-3096-439b-85f1-7b65d3afd531">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Click on Upload Button without choosing a file
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_project46ad0e0d-3096-439b-85f1-7b65d3afd531"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the upload website</span>
+                            
+                          
+                              <span class="step-duration">
+                               2s 261ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> Click on Upload button</span>
+                            
+                          
+                              <span class="step-duration">
+                               877ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Error message should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               111ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariotoptal_projectfab78b5d-f2e0-47bd-b01b-280fd5eedc0d">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Choose a file, clear the selection and upload
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="5 Steps Passed">5</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariotoptal_projectfab78b5d-f2e0-47bd-b01b-280fd5eedc0d"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> User navigate to the upload website</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 216ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> User selects a file &quot;test_upload.jpg&quot; and click open</span>
+                            
+                          
+                              <span class="step-duration">
+                               99ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Clear the selection</span>
+                            
+                          
+                              <span class="step-duration">
+                               89ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Click on Upload button</span>
+                            
+                          
+                              <span class="step-duration">
+                               885ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> Error message should be displayed</span>
+                            
+                          
+                              <span class="step-duration">
+                               120ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+    </div>
+
+    <div class="navbar-fixed-bottom row-fluid footer-div ">
+      <div class="navbar-inner">
+        <div class="footer-container">
+          <a  target="_blank" href="https://www.npmjs.com/package/cucumber-html-reporter">
+            <div class="text-muted footer-link">
+              generated by @cucumber-html-reporter
+            </div>
+             </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load("visualization", "1", {packages: ["corechart"]});
+        google.setOnLoadCallback(function() {drawChart({
+                                                            "title" : "Features",
+                                                            "failed" : 0,
+                                                            "passed" : 2,
+                                                            "notdefined" : 0,
+                                                            "pending" : 0,
+                                                            "skipped" : 0,
+                                                            "ambiguous" : 0
+                                                        })
+                                            });
+        google.setOnLoadCallback(function() {drawChart({
+                                                            "title" : "Scenarios",
+                                                            "failed" : 0,
+                                                            "passed" : 14,
+                                                            "notdefined" : 0,
+                                                            "pending" : 0,
+                                                            "skipped" : 0,
+                                                            "ambiguous" : 0
+                                                        })
+                                            });
+    </script>
+    <script>
+      $(document).ready(function() {
+    $('.collapse').on('hide.bs.collapse', function(e) {
+        e.stopPropagation();
+        $(this).prev().removeClass('open');
+    }).on('show.bs.collapse', function(e) {
+        e.stopPropagation();
+        $(this).prev().addClass('open');
+    });
+
+    var $generated = $('.generated-on');
+
+    $generated.text('Generated ' + moment($generated.text()).fromNow());
+});
+
+function toggle(className) {
+  var x = $(className);
+  if ( x.css('display') === "none") {
+    x.css('display', 'block');
+  } else {
+    x.css('display', 'none');
+  }
+}
+
+      function drawChart(chartData) {
+    var data = google.visualization.arrayToDataTable([
+        ['Task', 'Cucumber Results'],
+        ['Passed', chartData.passed],
+        ['Failed', chartData.failed],
+        ['Pending', chartData.pending],
+        ['Undefined', chartData.notdefined],
+        ['Ambiguous', chartData.ambiguous],
+        ['Skipped', chartData.skipped]        
+    ]);
+
+    var total = chartData.passed + chartData.failed + (chartData.pending || 0) + (chartData.notdefined || 0) + (chartData.ambiguous || 0) + (chartData.skipped || 0);
+    var title;
+
+    if (total === 1) {
+        title = total + ' ' + chartData.title.slice(0, -1)
+    } else {
+        title = total + ' ' + chartData.title;
+    }
+
+    var options = {
+        width: '100%',
+        height: 240,
+        title: title,
+        is3D: true,
+        colors: ['#5cb85c', '#d9534f', '#999', '#5bc0de', '#428bca', '#f0ad4e'],
+        fontSize: '13',
+        fontName: '"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif',
+        slices: {
+            1: {offset: 0.4},
+            2: {offset: 0.4},
+            3: {offset: 0.4},
+            4: {offset: 0.4},
+            5: {offset: 0.4},
+            6: {offset: 0.4}
+        },
+        titleTextStyle: {
+            fontSize: '13',
+            color: '#5e5e5e'
+        }
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart_' + chartData.title.toLowerCase()));
+
+    function selectHandler() {
+      var selectedItem = chart.getSelection()[0];
+      if (selectedItem) {
+        var featureStatus = data.getValue(selectedItem.row, 0);
+        if (featureStatus === 'Passed'){
+            var x = $('.feature-passed');
+        }else{
+            var x = $('.feature-failed');
+        }
+        if (x && x.css('display') === "none") {
+          x.css('display', 'block');
+        } else {
+          x.css('display', 'none');
+        }
+      }
+    }
+    google.visualization.events.addListener(chart, 'select', selectHandler);
+
+    chart.draw(data, options);
+}
+
+      $('a.toggle').on('click', function(e) {
+    e.preventDefault();
+
+    if (!$(this).hasClass('collapse')) {
+        if ($(this).text() === 'Screenshot -') {
+            // $(this).text('Screenshot +');
+            $(this).next('a.screenshot').find('img').hide();
+        } else if($(this).text() === 'Screenshot +') {
+            // $(this).text('Screenshot -');
+            $(this).next('a.screenshot').find('img').show();
+        }
+    }
+
+    if ($(this).text().includes(' -')) {
+        $(this).text($(this).text().replace(' -', ' +'));
+    } else {
+        $(this).text($(this).text().replace(' +', ' -'));
+    }
+});
+
+    </script>
+  </body>
+</html>

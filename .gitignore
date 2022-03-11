@@ -1,0 +1,5 @@
+# Files/directories need to be ignored
+
+node_modules/
+report
+

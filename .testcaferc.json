@@ -1,0 +1,16 @@
+{
+    "browsers": "chrome:headless",
+    "src": "test",
+    "reporter": "list",
+    "screenshots": {
+        "path": "report/screenshots",
+        "takeOnFails": true,
+        "fullPage": true
+    },    
+    "concurrency": 1,
+    "selectorTimeout": 10000,
+    "assertionTimeout": 10000,
+    "pageLoadTimeout": 10000,
+    "speed": 1,
+    "skipJsErrors": true
+}
