@@ -12,3 +12,14 @@ jobs:
         run: |
           npm install
           npm test
+      - name: Archive artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Documents
+          path: |
+            Documents
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: execution-report_ci
+          path: report/cucumber_report.html
