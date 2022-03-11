@@ -14,7 +14,7 @@
   "scripts": {
     "test": "npm-run-all -s -c pretest maintest report",
     "pretest": "node ./config/pretest.js",
-    "maintest": "./node_modules/.bin/cucumber-js --format json:report/cucumber_report.json",
+    "maintest": "node_modules/.bin/cucumber-js --format json:report/cucumber_report.json",
     "report": "node ./report-generator.js"
   },
   "repository": {
