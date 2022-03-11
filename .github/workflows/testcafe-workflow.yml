@@ -1,4 +1,4 @@
-name: End-to-End Tests
+name: Automation Tests
 on: [push]
 
 jobs:
@@ -12,3 +12,8 @@ jobs:
         run: |
           npm install
           npm test
+      - name: Archive code coverage results
+        uses: actions/upload-artifact@v3
+        with:
+          name: execution-report
+          path: report/cucumber_report.html
