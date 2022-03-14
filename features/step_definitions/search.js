@@ -61,6 +61,13 @@ Then('User should be able to search successfully and Search results should conta
 }
     });
 
+Then('No Search query is performed and home page is displayed', async function () {
+    
+    var url =  await common.getURL.url();
+    await testController
+        .expect(url).notContains("search");
+    });
+
 Then('Search box and Search button should be present', async function () {
     await testController
         .expect(homepage.HomePage.SearchBox().exists).ok()

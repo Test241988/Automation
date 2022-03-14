@@ -21,7 +21,7 @@ Then User should be able to search successfully and Search results should contai
 Scenario: Click on Search without entering any search text
 Given User navigate to the website
 And Click on Search button
-Then No products should be displayed
+Then No Search query is performed and home page is displayed
 
 Scenario: Search for empty space and verify the search results on multiple pages
 Given User navigate to the website

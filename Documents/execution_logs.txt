@@ -20,15 +20,15 @@ Why you should do it regularly:
 https://github.com/browserslist/browserslist#browsers-data-updating
 The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ..... √ fixture - test
 
 
- 1 passed (4s)
+ 1 passed (3s)
 The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ....
 
@@ -38,10 +38,10 @@ iPhone
 ... √ fixture - test
 
 
- 1 passed (9s)
+ 1 passed (4s)
 The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ....
 
@@ -53,18 +53,19 @@ MacBook Pro
 ... √ fixture - test
 
 
- 1 passed (9s)
+ 1 passed (5s)
 The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
-...... √ fixture - test
+...F.. √ fixture - test (screenshots: C:\Users\ancha\Documents\GitHub\Toptal\Ankur-Chadha-2\Web
+ Automation\report\screenshots\2022-03-13_14-20-05\test-1\Chrome_99.0.4844.51_Windows_10)
 
 
- 1 passed (3s)
+ 1 passed (8s)
 The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ....
 
@@ -93,21 +94,21 @@ Product 8
 Samsung SyncMaster 941BW
 Sony VAIO
 Samsung Galaxy Tab 10.1
-... √ fixture - test
+...The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ √ fixture - test
 
 
- 1 passed (13s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (9s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
-.......... √ fixture - test
+..........The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ √ fixture - test
 
 
- 1 passed (15s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (5s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ....
 
@@ -115,13 +116,13 @@ Product count: 2
 Following products are found after the search:
 Samsung SyncMaster 941BW
 Samsung Galaxy Tab 10.1
-... √ fixture - test
+...The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ √ fixture - test
 
 
- 1 passed (10s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (4s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ....
 
@@ -135,74 +136,74 @@ Product count: 2
 Following products are found after the search:
 Samsung SyncMaster 941BW
 Samsung Galaxy Tab 10.1
-...(node:27296) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 uncaughtException listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+...(node:2608) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 uncaughtException listeners added to [process]. Use emitter.setMaxListeners() to increase limit
 (Use `node --trace-warnings ...` to show where the warning was created)
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  √ fixture - test
 
 
- 1 passed (15s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (7s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ..
 File "test_upload.jpg" selected!!
 ..
 File "test_upload.jpg" uploaded successfully!!
-... √ fixture - test
+...The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ √ fixture - test
 
 
  1 passed (5s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ..
 File "text-file.txt" selected!!
 ..
 File "text-file.txt" uploaded successfully!!
-...(node:27296) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 unhandledRejection listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+...(node:2608) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 unhandledRejection listeners added to [process]. Use emitter.setMaxListeners() to increase limit
+The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
  √ fixture - test
 
 
- 1 passed (4s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (3s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ..
 File "doc-file.docx" selected!!
 ..
 File "doc-file.docx" uploaded successfully!!
-... √ fixture - test
+...The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ √ fixture - test
 
 
- 1 passed (3s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (4s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ..
 File "excel-file.xlsx" selected!!
 ..
 File "excel-file.xlsx" uploaded successfully!!
-... √ fixture - test
+...The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ √ fixture - test
 
 
- 1 passed (4s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (3s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ...
 Error while uploading!!
-... √ fixture - test
+...The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ √ fixture - test
 
 
- 1 passed (4s)
-The "src", "screenshots.path", and "browsers" options from the configuration file will be ignored.
+ 1 passed (3s)
  Running tests in:
- - Chrome 98.0.4758.102 / Windows 10
+ - Chrome 99.0.4844.51 / Windows 10
 
 ..
 File "test_upload.jpg" selected!!
@@ -211,13 +212,57 @@ File "test_upload.jpg" selected!!
 Error while uploading!!
 ...
 
-14 scenarios (14 passed)
-59 steps (59 passed)
-2m50.688s (executing steps: 2m50.605s)
+Failures:
+
+1) Scenario: Click on Search without entering any search text # features\search.feature:21
+   √ Before # Automation\node_modules\@cucumber\cucumber\lib\support_code_library_builder\index.js:79
+   √ Given User navigate to the website # features\step_definitions\search.js:7
+   √ And Click on Search button # features\step_definitions\search.js:22
+   × Then No Search query is performed and home page is displayed # features\step_definitions\search.js:64
+       ExternalAssertionLibraryError {
+         code: 'E53',
+         isTestCafeError: true,
+         callsite: CallsiteRecord {
+           filename: 'C:\\Users\\ancha\\Documents\\GitHub\\Toptal\\Ankur-Chadha-2\\Web Automation\\features\\step_definitions\\search.js',
+           lineNum: 67,
+           callsiteFrameIdx: 6,
+           stackFrames: [
+             [Object], [Object],
+             [Object], [Object],
+             [Object], [Object],
+             [Object]
+           ],
+           isV8Frames: true
+         },
+         errMsg: "AssertionError: expected 'https://demo.opencart.com/index.php?route=product/search' to not include 'search'",
+         diff: false
+       }
+   √ After # Automation\node_modules\@cucumber\cucumber\lib\support_code_library_builder\index.js:79
+       Attachment (image/png)
+   √ After # Automation\node_modules\@cucumber\cucumber\lib\support_code_library_builder\index.js:79
+
+14 scenarios (1 failed, 13 passed)
+59 steps (1 failed, 58 passed)
+1m28.778s (executing steps: 1m28.669s)
  √ fixture - test
 
 
- 1 passed (4s)
+ 1 passed (3s)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! toptal-project@1.0.0 maintest: `cucumber-js --format json:report/cucumber_report.json`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the toptal-project@1.0.0 maintest script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\ancha\AppData\Roaming\npm-cache\_logs\2022-03-13T21_21_15_296Z-debug.log
 
 > toptal-project@1.0.0 report C:\Users\ancha\Documents\GitHub\Toptal\Ankur-Chadha-2\Web Automation
 > node ./report-generator.js
+
+
+🚀 Cucumber HTML report report/cucumber_report.html generated successfully 👍
+ERROR: "maintest" exited with 1.
+npm ERR! Test failed.  See above for more details.
